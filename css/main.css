@@ -1,0 +1,190 @@
+body {
+	margin:0;
+	padding: 0;
+}
+
+.hero {
+	height: 617px;
+	width: 100%;
+	text-align: center;
+	background:url('http://www.cultureba.com.br/wp-content/uploads/2016/01/star-wars.jpg');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.hero h1, .hero h2 {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+.hero h1 {
+	font-size: 72px;
+	margin-bottom: 35px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #FFF;
+}
+.hero h2 {
+	font-size: 24px;
+	margin-bottom: 30px;
+	font-family: georgia;
+	font-style: italic;
+	color: #FFF;
+	font-weight: 300;
+}
+.hero .prev, .hero .next {
+	position: absolute;
+	width: 40px;
+	line-height: 120px;
+	color: #FFF;
+	background-color: #666;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.hero .prev {
+	left: 0;
+}
+.hero .next {
+	right: 0;
+}
+.hero article {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	position: relative;
+}
+
+.btn {
+	padding: 0 40px;
+	display: inline-block;
+	line-height: 60px;
+	background-color: #6a6a6a;
+	color: #FFF;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+}
+.hero .btn {
+	margin-top: 35px;
+}
+.hero ul {
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.hero ul li {
+	display: inline-block;
+}
+.hero ul li a {
+	width: 14px;
+	height: 14px;
+	border: 1px solid rgba(255,255,255,0.6);
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+.hero ul li a:hover {
+	background: #FFF;
+	border-color: #FFF;
+}
+.hero ul li a.selected {
+	background: #FFF;
+	border-color: #FFF;
+}
+
+
+header {
+	background: red;
+}
+
+header .wrapper {
+	width: 1180px;
+	margin:0 auto;
+	background: green;
+	line-height: 114px;
+	overflow: hidden;
+	border-bottom: 1px solid #cecece;
+}
+
+header .wrapper a.logo {
+	display: block;
+	width: 42px;
+	height: 42px;
+	float: left;
+	line-height: 42px;
+	text-align: center;
+	background: #FFF;
+	color: #000;
+	position:relative;
+	top: 35px;
+	text-decoration: none;
+
+}
+
+header .wrapper nav {
+	float: left;
+	background: yellow;
+}
+header .wrapper nav ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+header .wrapper nav ul li {
+	float: left;
+	font-size: 14px;
+	margin: 0 0 0 50px;
+	padding: 0;
+	list-style-type: none;
+}
+header .wrapper nav ul li a{
+	text-decoration: none;
+}
+header .wrapper aside {
+	float: right;
+	overflow: hidden;
+	background: blue;
+}
+header .wrapper aside .users {
+	float: left;
+}
+header .wrapper aside .search {
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
