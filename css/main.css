@@ -3,6 +3,10 @@ body {
 	padding: 0;
 }
 
+body *{
+    font-family: 'Lato', sans-serif;
+}
+
 .hero {
 	height: 617px;
 	width: 100%;
@@ -21,7 +25,6 @@ body {
 .hero h1 {
 	font-size: 72px;
 	margin-bottom: 35px;
-	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	text-transform: uppercase;
 	color: #FFF;
@@ -49,6 +52,14 @@ body {
 }
 .hero .prev {
 	left: 0;
+}
+
+
+.prev:after {
+	content: '';
+	width: 100px;
+	height: 60px;
+	background: green;
 }
 .hero .next {
 	right: 0;
@@ -108,13 +119,19 @@ body {
 
 
 header {
-	background: red;
+	background: transparent;
+}
+header.fixed {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
 }
 
-header .wrapper {
+.wrapper {
 	width: 1180px;
 	margin:0 auto;
-	background: green;
 	line-height: 114px;
 	overflow: hidden;
 	border-bottom: 1px solid #cecece;
@@ -137,7 +154,7 @@ header .wrapper a.logo {
 
 header .wrapper nav {
 	float: left;
-	background: yellow;
+
 }
 header .wrapper nav ul {
 	margin: 0;
@@ -157,14 +174,116 @@ header .wrapper nav ul li a{
 header .wrapper aside {
 	float: right;
 	overflow: hidden;
-	background: blue;
 }
 header .wrapper aside .users {
 	float: left;
 }
-header .wrapper aside .search {
+.users ul li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0px 40px 0px 0;
+    position: relative;
+    bottom: 10px;
 	float: left;
 }
+.users ul li a[href*="login"]{
+	color: red;
+}
+.users ul li a[href*="cart"]{
+	color: green;
+}
+.users ul li a[href*="login"]:before {
+	content: url('http://www.dreamtemplate.com/dreamcodes/web_icons/gray-contact-user-icon.png');
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+.users ul li a[href*="cart"]:before {
+	content: url('http://www.whistlestoptv.com/wp-content/uploads/2012/09/mail-icon_20px.png');
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 4px;
+	margin-right: 5px;
+}
+
+header .wrapper aside .search {
+	float: left;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #000;
+	position: relative;
+    top: 40px;
+	overflow: hidden;
+
+	transition:all 1s ease-in;
+}
+header .wrapper aside .search:hover {
+	width: 260px;
+        transition:all 0.5s ease-in;
+}
+header .wrapper aside .search:hover input {
+	width: 260px;
+}
+
+header .wrapper aside .search a.submit {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	float: right;
+	border-left: 1px solid red;
+	background: url('http://www.dreamtemplate.com/dreamcodes/web_icons/gray-classic-search-icon.png') no-repeat 10px 10px;
+}
+header .wrapper aside .search input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	border: 0;
+	line-height: 40px;
+	background: none;
+}
+
+.gallery{
+    height: 900px;
+    width: 100%;
+    background-color: yellow;
+    padding: 32px 0;
+}
+
+.gallery .wrapper section article{
+    float: left;
+    height: 295px;
+    width: 295px;
+    background-color: green;
+    color: red;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gallery .wrapper section article h2, h3, p{
+    position: relative;
+    top: 242px;
+    line-height: 20px;
+}
+
+.gallery .wrapper section article h3{
+    font-style: italic;
+}
+
+.gallery .wrapper section article:first-child,
+.gallery .wrapper section article:nth-child(7){
+    height: 590px;
+    background-color: #fff;
+}
+
+.gallery .wrapper section article:nth-child(7){
+    float: right;
+}
+
 
 
 
