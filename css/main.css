@@ -7,136 +7,26 @@ body *{
     font-family: 'Lato', sans-serif;
 }
 
-.hero {
-	height: 617px;
-	width: 100%;
-	text-align: center;
-	background:url('http://www.cultureba.com.br/wp-content/uploads/2016/01/star-wars.jpg');
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-}
-
-.hero h1, .hero h2 {
-	width: 80%;
-	text-align: center;
-	margin: 0 auto;
-}
-.hero h1 {
-	font-size: 72px;
-	margin-bottom: 35px;
-	font-weight: 300;
-	text-transform: uppercase;
-	color: #FFF;
-}
-.hero h2 {
-	font-size: 24px;
-	margin-bottom: 30px;
-	font-family: georgia;
-	font-style: italic;
-	color: #FFF;
-	font-weight: 300;
-}
-.hero .prev, .hero .next {
-	position: absolute;
-	width: 40px;
-	line-height: 120px;
-	color: #FFF;
-	background-color: #666;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-.hero .prev {
-	left: 0;
-}
-
-
-.prev:after {
-	content: '';
-	width: 100px;
-	height: 60px;
-	background: green;
-}
-.hero .next {
-	right: 0;
-}
-.hero article {
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	position: relative;
-}
-
-.btn {
-	padding: 0 40px;
-	display: inline-block;
-	line-height: 60px;
-	background-color: #6a6a6a;
-	color: #FFF;
-	font-size: 14px;
-	text-transform: uppercase;
+a{
 	text-decoration: none;
-	font-family: 'Lato', sans-serif;
 }
-.hero .btn {
-	margin-top: 35px;
-}
-.hero ul {
+
+/* ************************ */
+/* ~~~~~~~ HEADER ~~~~~~~~~*/
+/* ************************ */
+
+header{
+	background: transparent;
 	width: 100%;
 	position: absolute;
-	bottom: 30px;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
-.hero ul li {
-	display: inline-block;
-}
-.hero ul li a {
-	width: 14px;
-	height: 14px;
-	border: 1px solid rgba(255,255,255,0.6);
-	display: block;
-	overflow: hidden;
-	text-indent: -9999px;
-}
-.hero ul li a:hover {
-	background: #FFF;
-	border-color: #FFF;
-}
-.hero ul li a.selected {
-	background: #FFF;
-	border-color: #FFF;
-}
-
-
-header {
-	background: transparent;
-}
-header.fixed {
-	width: 100%;
-	position: fixed;
 	left: 0;
 	top: 0;
 	z-index: 100;
 }
-
-.wrapper {
-	width: 1180px;
-	margin:0 auto;
-	line-height: 114px;
-	overflow: hidden;
-	border-bottom: 1px solid #cecece;
+header .wrapper *{
+	color: #eee;
+	font-size: 16px;
 }
-
 header .wrapper a.logo {
 	display: block;
 	width: 42px;
@@ -149,12 +39,9 @@ header .wrapper a.logo {
 	position:relative;
 	top: 35px;
 	text-decoration: none;
-
 }
-
 header .wrapper nav {
 	float: left;
-
 }
 header .wrapper nav ul {
 	margin: 0;
@@ -178,28 +65,28 @@ header .wrapper aside {
 header .wrapper aside .users {
 	float: left;
 }
-.users ul li {
+header .users ul li {
 	list-style-type: none;
 	padding: 0;
 	margin: 0px 40px 0px 0;
     position: relative;
-    bottom: 10px;
+    bottom: 14px;
 	float: left;
 }
-.users ul li a[href*="login"]{
-	color: red;
+header .users ul li a[href*="login"]{
+
 }
-.users ul li a[href*="cart"]{
-	color: green;
+header .users ul li a[href*="cart"]{
+
 }
-.users ul li a[href*="login"]:before {
+header .users ul li a[href*="login"]:before {
 	content: url('http://www.dreamtemplate.com/dreamcodes/web_icons/gray-contact-user-icon.png');
 	width: 20px;
 	height: 20px;
 	margin-right: 5px;
 }
 
-.users ul li a[href*="cart"]:before {
+header .users ul li a[href*="cart"]:before {
 	content: url('http://www.whistlestoptv.com/wp-content/uploads/2012/09/mail-icon_20px.png');
 	width: 20px;
 	height: 20px;
@@ -246,6 +133,123 @@ header .wrapper aside .search input {
 	background: none;
 }
 
+/* ************************ */
+/* ~~~~~~~ HERO ~~~~~~~~~*/
+/* ************************ */
+.hero {
+	height: 617px;
+	width: 100%;
+	text-align: center;
+	 background-image: -webkit-gradient(
+		linear,
+		right top,
+		left bottom,
+		color-stop(0, #000000),
+		color-stop(0, #2EE8E8),
+		color-stop(1, #335454),
+		color-stop(1, #33423F),
+		color-stop(1, #407878),
+		color-stop(1, #2BC4C4)
+	);
+	
+	background-image: -o-linear-gradient(left bottom, #000000 0%, #2EE8E8 0%, #335454 100%, #33423F 100%, #407878 100%, #2BC4C4 100%);
+	background-image: -moz-linear-gradient(left bottom, #000000 0%, #2EE8E8 0%, #335454 100%, #33423F 100%, #407878 100%, #2BC4C4 100%);
+	background-image: -webkit-linear-gradient(left bottom, #000000 0%, #2EE8E8 0%, #335454 100%, #33423F 100%, #407878 100%, #2BC4C4 100%);
+	background-image: -ms-linear-gradient(left bottom, #000000 0%, #2EE8E8 0%, #335454 100%, #33423F 100%, #407878 100%, #2BC4C4 100%);
+	background-image: linear-gradient(to left bottom, #000000 0%, #2EE8E8 0%, #335454 100%, #33423F 100%, #407878 100%, #2BC4C4 100%); 
+
+}
+
+.hero h1, .hero h2 {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+.hero h1 {
+	font-size: 72px;
+	margin-bottom: 35px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #FFF;
+}
+.hero h2 {
+	font-size: 24px;
+	margin-bottom: 30px;
+	font-family: georgia;
+	font-style: italic;
+	color: #FFF;
+	font-weight: 300;
+}
+.hero .prev, .hero .next {
+	position: absolute;
+	width: 40px;
+	line-height: 120px;
+	color: #FFF;
+	background-color: #666;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.hero .prev {
+	left: 0;
+}
+
+.hero .prev:after {
+	content: '';
+	width: 100px;
+	height: 60px;
+	background: green;
+}
+.hero .next {
+	right: 0;
+}
+.hero article {
+	top: 50%;
+	-webkit-transform: translateY(-60%);
+	-moz-transform: translateY(-60%);
+	-o-transform: translateY(-60%);
+	-ms-transform: translateY(-60%);
+	transform: translateY(-60%);
+	position: relative;
+}
+.hero .btn {
+	position: relative;
+	top: 80px;
+}
+.hero ul {
+	width: 100%;
+	position: absolute;
+	bottom: 90px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.hero ul li {
+	display: inline-block;
+}
+.hero ul li a {
+	width: 14px;
+	height: 14px;
+	border: 1px solid rgba(255,255,255,0.6);
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+.hero ul li a:hover {
+	background: #FFF;
+	border-color: #FFF;
+}
+.hero ul li a.selected {
+	background: #FFF;
+	border-color: #FFF;
+}
+
+
+
 .gallery{
     height: 900px;
     width: 100%;
@@ -258,26 +262,31 @@ header .wrapper aside .search input {
     height: 295px;
     width: 295px;
     background-color: green;
-    color: red;
-    font-size: 14px;
+    color: #fff;
     box-sizing: border-box;
     text-align: center;
 }
 
-.gallery .wrapper section article h2, h3, p{
-    position: relative;
-    top: 242px;
-    line-height: 20px;
+.gallery .wrapper section article h1{
+	line-height: 1.125;
+	width: 55%;
+	font-size: 24px;
+	margin: 0 auto;
+	margin-top: 250px;
+	margin-bottom: -55px;
+	text-transform: uppercase;
 }
 
-.gallery .wrapper section article h3{
-    font-style: italic;
+.gallery .wrapper section article h2{
+	text-transform: uppercase;
+	font-size: 20px;
 }
+
 
 .gallery .wrapper section article:first-child,
 .gallery .wrapper section article:nth-child(7){
     height: 590px;
-    background-color: #fff;
+    background-color: #d2d2d2;
 }
 
 .gallery .wrapper section article:nth-child(7){
@@ -286,9 +295,41 @@ header .wrapper aside .search input {
 
 
 
+/* REUSABLES ~~~~~~~~~~~~~~ */
+
+/* BUTTONS */
+.btn{
+	padding: 0 20px;
+	display: inline-block;
+	line-height: 60px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 2px solid #ddd;
+	color: #FFF;
+	border-radius: 4px;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	transform: translate(0, 0);
+	transition: all .2s ease;
+	overflow:hidden;
+	box-shadow: 0px 6px 4px rgba(48, 48, 48, 0.35);
+}
+.btn:hover{
+	transform: translate(0, 3px);
+	box-shadow: 0px 2px 10px rgba(48, 48, 48, 0.35);
+}
 
 
-
+/* WRAPPER */
+.wrapper {
+	width: 1180px;
+	margin:0 auto;
+	line-height: 114px;
+	overflow: hidden;
+	border-bottom: 1px solid #cecece;
+}
 
 
 
