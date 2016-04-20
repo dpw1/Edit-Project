@@ -1,14 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
 	margin:0;
 	padding: 0;
 }
-
 body *{
     font-family: 'Lato', sans-serif;
 }
-
 a{
 	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+input{
+    outline: 0;
+    padding-left: 15px;
+}
+input::-webkit-input-placeholder { /* Must add compability to all browsers */
+    font-style: italic;
 }
 
 /* ************************ */
@@ -22,6 +35,9 @@ header{
 	left: 0;
 	top: 0;
 	z-index: 100;
+}
+header .wrapper{
+	border-bottom: 1px solid #cecece;
 }
 header .wrapper *{
 	color: #eee;
@@ -70,31 +86,12 @@ header .users ul li {
 	padding: 0;
 	margin: 0px 40px 0px 0;
     position: relative;
-    bottom: 14px;
+    bottom: -4px;
 	float: left;
 }
-header .users ul li a[href*="login"]{
-
-}
-header .users ul li a[href*="cart"]{
-
-}
-header .users ul li a[href*="login"]:before {
-	content: url('http://www.dreamtemplate.com/dreamcodes/web_icons/gray-contact-user-icon.png');
+header .users ul li a[href*="login"] i, header .users ul li a[href*="cart"] i{
 	width: 20px;
-	height: 20px;
-	margin-right: 5px;
 }
-
-header .users ul li a[href*="cart"]:before {
-	content: url('http://www.whistlestoptv.com/wp-content/uploads/2012/09/mail-icon_20px.png');
-	width: 20px;
-	height: 20px;
-	position: relative;
-	top: 4px;
-	margin-right: 5px;
-}
-
 header .wrapper aside .search {
 	float: left;
 	width: 40px;
@@ -103,25 +100,31 @@ header .wrapper aside .search {
 	position: relative;
     top: 40px;
 	overflow: hidden;
-
 	transition:all 1s ease-in;
 }
 header .wrapper aside .search:hover {
 	width: 260px;
-        transition:all 0.5s ease-in;
+    transition:all 0.5s ease-in;
 }
 header .wrapper aside .search:hover input {
 	width: 260px;
 }
-
+header .wrapper aside .search a.submit i{
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 17px;
+	position: relative;
+	top: -38px;
+	left: 3px;
+	display: inline-block;
+} 
 header .wrapper aside .search a.submit {
 	display: block;
 	width: 40px;
 	height: 40px;
 	position: relative;
 	float: right;
-	border-left: 1px solid red;
-	background: url('http://www.dreamtemplate.com/dreamcodes/web_icons/gray-classic-search-icon.png') no-repeat 10px 10px;
 }
 header .wrapper aside .search input {
 	position: absolute;
@@ -131,12 +134,24 @@ header .wrapper aside .search input {
 	border: 0;
 	line-height: 40px;
 	background: none;
+	color: white;
+}
+header .wrapper aside .search input:focus {
+	/*width: 260px;*/
+
+}
+header .wrapper aside .search input::-webkit-input-placeholder,
+header .wrapper aside .search input{
+	font-size: 14px;
+	font-weight: 300;
+	color: white;
 }
 
 /* ************************ */
 /* ~~~~~~~ HERO ~~~~~~~~~*/
 /* ************************ */
 .hero {
+    position: relative;
 	height: 617px;
 	width: 100%;
 	text-align: center;
@@ -157,7 +172,6 @@ header .wrapper aside .search input {
 	background-image: -webkit-linear-gradient(left bottom, #000000 0%, #2EE8E8 0%, #335454 100%, #33423F 100%, #407878 100%, #2BC4C4 100%);
 	background-image: -ms-linear-gradient(left bottom, #000000 0%, #2EE8E8 0%, #335454 100%, #33423F 100%, #407878 100%, #2BC4C4 100%);
 	background-image: linear-gradient(to left bottom, #000000 0%, #2EE8E8 0%, #335454 100%, #33423F 100%, #407878 100%, #2BC4C4 100%); 
-
 }
 
 .hero h1, .hero h2 {
@@ -181,11 +195,6 @@ header .wrapper aside .search input {
 	font-weight: 300;
 }
 .hero .prev, .hero .next {
-	position: absolute;
-	width: 40px;
-	line-height: 120px;
-	color: #FFF;
-	background-color: #666;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -193,26 +202,14 @@ header .wrapper aside .search input {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-.hero .prev {
-	left: 0;
-}
-
-.hero .prev:after {
-	content: '';
-	width: 100px;
-	height: 60px;
-	background: green;
-}
-.hero .next {
-	right: 0;
-}
 .hero article {
 	top: 50%;
 	-webkit-transform: translateY(-60%);
 	-moz-transform: translateY(-60%);
 	-o-transform: translateY(-60%);
 	-ms-transform: translateY(-60%);
-	transform: translateY(-60%);
+
+    transform: translateY(-60%);
 	position: relative;
 }
 .hero .btn {
@@ -222,7 +219,7 @@ header .wrapper aside .search input {
 .hero ul {
 	width: 100%;
 	position: absolute;
-	bottom: 90px;
+	bottom: 30px;
 	left: 0;
 	margin: 0;
 	padding: 0;
@@ -250,50 +247,197 @@ header .wrapper aside .search input {
 
 
 
+
 .gallery{
-    height: 900px;
     width: 100%;
-    background-color: yellow;
+    background-color: #2D3A37;
     padding: 32px 0;
 }
-
 .gallery .wrapper section article{
     float: left;
     height: 295px;
     width: 295px;
-    background-color: green;
+    background-color: #bbb;
     color: #fff;
     box-sizing: border-box;
     text-align: center;
 }
-
+.gallery .wrapper section article div{
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gallery .wrapper section article div h1, h2, i, p{
+    margin: 0 auto;
+    line-height: 30px;
+    width: 80%;
+}
 .gallery .wrapper section article h1{
 	line-height: 1.125;
 	width: 55%;
 	font-size: 24px;
-	margin: 0 auto;
-	margin-top: 250px;
-	margin-bottom: -55px;
 	text-transform: uppercase;
 }
-
 .gallery .wrapper section article h2{
 	text-transform: uppercase;
+    font-family: "Georgia";
 	font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
 }
-
-
 .gallery .wrapper section article:first-child,
 .gallery .wrapper section article:nth-child(7){
     height: 590px;
     background-color: #d2d2d2;
 }
-
 .gallery .wrapper section article:nth-child(7){
     float: right;
 }
+.gallery .twitter{
+
+}
 
 
+
+
+.newsletter{
+    height: 457px;
+    padding: 145px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.newsletter h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.newsletter h2{
+    font-size: 18px;
+    font-family: "Georgia";
+    font-style: italic;
+    font-weight: 400;
+    color: #606060;
+    margin-bottom: 57px;
+}
+.newsletter div{
+    width: 570px;
+    height: 60px;
+    margin: 0 auto;
+}
+.newsletter div input, .newsletter div a.submit{
+    line-height: 55px;
+    float: left;
+}
+.newsletter div input{
+    width: 475px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+.newsletter div a.submit{
+    display: block;
+    background: #f68236;
+    padding-bottom: 4px;
+    width: 95px;
+    font-weight: 300;
+}
+.newsletter div a{
+	color: white;
+}
+.newsletter div input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #606060;
+    font-style: italic;
+}
+
+
+
+
+.slider{
+    width: 100%;
+}
+.slider .wrapper{
+    position: relative;
+}
+.slider .wrapper div{
+    background-color: #bbb;
+    height: 120px;
+}
+
+
+
+
+
+footer{
+	height: 255px;
+}
+footer *{
+	color: #303030;
+}
+footer a:hover{
+	text-decoration: underline;
+}
+footer .collection, footer .shop, footer .site, footer aside{
+	display: block;
+	float: left;
+	width: 25%;
+	overflow: hidden;
+}
+footer h1{
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+footer p{
+	font-size: 12px;
+	font-family: "Lato";
+	line-height: 22px;
+}
+footer ul{
+	display: block;
+	font-size: 12px;
+	font-family: "Lato";
+	line-height: 22px;
+	margin-top: -30px;
+	position: relative;
+}
+footer div{
+	position: relative;
+}
+footer div>ul:after{
+	content: '';
+	position: absolute;
+	top: -45px;
+	right: 20px;
+	height: 162px;
+	border: 1px solid #eaeaea;
+	border-left: 0;
+}
+footer aside{
+}
+footer aside ul li p{
+	background-color: green;
+	width: 100%;
+}
+footer aside ul.social{
+	position: absolute;
+	bottom: 15px;
+}
+footer aside ul.social li{
+	width: 31px;
+	line-height: 31px;
+	border: 1px solid #606060;
+	display: inline-block;
+	margin-right: 20px;
+	text-align: center;
+}
+footer aside ul.social li a i{
+	position: relative;
+	top: 2px;
+	font-size: 16px;
+	color: #606060;
+}
 
 /* REUSABLES ~~~~~~~~~~~~~~ */
 
@@ -322,13 +466,31 @@ header .wrapper aside .search input {
 }
 
 
+
 /* WRAPPER */
 .wrapper {
 	width: 1180px;
 	margin:0 auto;
 	line-height: 114px;
 	overflow: hidden;
-	border-bottom: 1px solid #cecece;
+}
+
+/* PREV AND NEXT BUTTONS */
+.prev, .next{
+	width: 40px;
+	line-height: 120px;
+	color: white;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	font-size: 35px;
+}
+.prev{
+	left: 0;
+}
+.next{
+	right: 0;
 }
 
 
