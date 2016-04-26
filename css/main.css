@@ -39,10 +39,10 @@ header{
 }
 header.pos-relative{
 	position: relative;
-	color: black;
+	color: #3c3c3c;
 }
 header.pos-relative .wrapper *{
-	color: black;
+	color: #3c3c3c;
 }
 header.pos-relative .wrapper{
 	border-bottom: 1px solid #e5e5e5;
@@ -50,6 +50,9 @@ header.pos-relative .wrapper{
 header.pos-relative .wrapper a.logo {
 	background: #000;
 	color: #fff;
+}
+header.pos-relative .wrapper aside .search a.submit i{
+	color: #3c3c3c;
 }
 header .wrapper *{
 	color: #eee;
@@ -258,8 +261,39 @@ header .wrapper aside .search input{
 }
 
 
+ul.list{
+	text-align: center;
+}
+ul.list li{
+	display: inline-block;
+}
+ul.list li a{
+	display: block;
+	text-align: center;
+	overflow: hidden;
+}
 
+ul.list.page{
+	padding: 65px 0;
+}
+ul.list.page li{
+	margin-right: 2px;
+}
+ul.list.page li a{
+	width: 25px;
+	height: 25px;
+	border: 1px solid #606060;
+	font-size: 12px;
+	font-family: "Lato";
+	color: #fff;
+	padding-top: 3px;
+	background-color: #303030;
 
+}
+ul.list.page li a.selected{
+	color: #8a8a8a;
+	background-color: #fff;
+}
 
 
 .gallery{
@@ -455,29 +489,12 @@ header .wrapper aside .search input{
 
 
 
-.products section{
-	width: 100%;
-	text-align: center;
-
-	/*margin: 60px 0;*/
-	/*background-color: yellow;*/
-}
-.products section:first-of-type{
-	margin-top: 20px;
-}
-.products section div{
-	padding-bottom: 65px;
-}
-
-
-
 
 .gallery-images{
     padding: 60px 0 100px 0;
 }
 .gallery-images article{
 	display: inline-block;
-	/*float: left;*/
 	margin-right: 110px;
 }
 .gallery-images article:last-child{
@@ -505,14 +522,17 @@ header .wrapper aside .search input{
 .gallery-images article h2{
 	font-weight: 400;
 	margin-top: 5px;
+	text-align: center;
 }
 
 
 
-.title-link{
+
+
+.title-subtitle{
     padding: 20px 0;
 }
-.title-link h1{
+.title-subtitle h1{
     width: 80%;	
 	margin: 0 auto;
 	text-align: center;
@@ -522,16 +542,31 @@ header .wrapper aside .search input{
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.title-link a{
+.title-subtitle h2{
+	font-size: 18px;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+	font-style: italic;
+	font-family: 'Georgia';
+	font-weight: 400;
+	color: #606060;
+	position: relative;	
+}
+.title-subtitle a{
     font-size: 18px;
 	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
 	font-style: italic;
 	font-family: 'Georgia';
 	color: #606060;
 	border-bottom: 2px solid #d7d7d7;
 	position: relative;
 }
-.title-link a:after{
+.title-subtitle a:after{
     content: '\f0da';
 	font-family: FontAwesome;
 	font-style: normal;
@@ -557,6 +592,13 @@ header .wrapper aside .search input{
 .title-basic .wrapper{
     padding: 60px 0;
     border-top: 1px solid #e5e5e5;
+}
+
+
+
+
+.products-men .gallery-images{
+	padding-bottom: 40px;
 }
 
 
@@ -622,7 +664,7 @@ footer aside ul.social li a{
 	line-height: 31px;
     display: block;
 	border: 1px solid #606060;
-	margin-right: 20px;
+	margin-right: 10px;
 	text-align: center;
 }
 footer aside ul.social li a i{
@@ -685,6 +727,76 @@ footer aside ul.social li a i{
 	right: 0;
 }
 
+/* Dropdown */
+.dropdown *{
+	font-size: 16px;
+	font-family: "Georgia";
+	font-style: italic;
+	color: #606060;
+}
+.dropdown {
+    position: relative;
+	padding-right: 15px;
+	display: inline-block;
+	left: 50%;
+	transform: translateX(-150%);
+	margin: 70px 0 20px 0;
+}
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    width: 180px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown button{
+	margin-right: 20px;
+    background: transparent;
+    border: none;
+    width: 180px;
+    padding-left: 3px;
+    border-bottom: 1px solid #3c3c3c;
+	text-align: left;
+	position: relative;
+	cursor: pointer;
+}
+.dropdown button:after{
+	content: '\f0d7';
+	font-family: FontAwesome;
+	font-style: normal;
+	position: absolute;
+	right: 6px;
+	top: 1px;
+	color: #3c3c3c;
+	font-size: 18px;
+}
+.dropdown button:last-of-type{
+	margin-right: 0;
+}
+.dropdown a {
+    display: block;
+    text-decoration: none;
+	background-color: white;
+	padding: 10px 0 10px 12px;
+}
+.dropdown a:hover {
+    background: #BBBBBB;
+}
+
+.Price {
+  font-size: 14px;
+  font-family: "Georgia";
+  color: rgb(96, 96, 96);
+  font-style: italic;
+  line-height: 2.571;
+  text-align: left;
+  position: absolute;
+  left: 493.305px;
+  top: 411.003px;
+  z-index: 160;
+}
 
 
 
