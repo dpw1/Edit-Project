@@ -548,9 +548,7 @@ a.submit{
 .title-subtitle h2{
 	font-size: 18px;
 	top: 10px;
-	left: 50%;
-	transform: translateX(-50%);
-	display: inline-block;
+	text-align: center;
 	font-style: italic;
 	font-family: 'Georgia';
 	font-weight: 400;
@@ -706,6 +704,9 @@ a.submit{
     margin-top: 50px;
     margin-bottom: 70px;
 }
+
+
+
 
 
 
@@ -912,20 +913,71 @@ a.submit{
     width: 280px;
 }
 .shipping-address form div:last-of-type{
-    background-color: blue;
-    display: inline-block;
-    width: 50%;
-    margin: 0 auto;
+    width: 220px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    display: inline-block;
 }
 .shipping-address form div:last-of-type label{
-
+    width: 190px;
+    text-align: center;
 }
 .shipping-address form div:last-of-type input{
+    width: 20px;
+    position: relative;
+    top: 4px;
+    height: 20px;
 }
+
+
+
+
+
+
+.payment-options .wrapper{
+    border: 1px solid #e5e5e5;
+}
+.payment-options .wrapper .wrapper-small:not(div){
+    text-align: center;
+    overflow: hidden;
+}
+.payment-options .title-subtitle{
+    padding: 80px 0;
+}
+.payment-options .wrapper-small ul li{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+.payment-options .wrapper-small ul li{
+    text-align: right;
+    padding: 10px 0;
+}
+.payment-options .wrapper-small ul li span{
+    display: block;
+    float: right;
+    width:50%;
+}
+.payment-options .wrapper-small ul li:last-child{
+    color: blue;
+}
+.payment-options .wrapper-small div p,
+.payment-options .wrapper-small div select{
+    width: 99%;
+}
+.payment-options .wrapper-small div p{
+    padding: 60px 0 8px 0;
+}
+.payment-options .wrapper-small div select{
+    height: 45px;
+    background-color: white;
+    margin-left: 3px;
+    margin-bottom: 35px;
+}
+.payment-options .wrapper-small a{
+    margin-bottom: 100px;
+}
+
 
 
 footer{
