@@ -817,9 +817,17 @@ a.submit{
 .basket .basket-item div.basket-item-qt{
 	width: 110px;
 	position: relative;
+    display: inline-block;
+}
+.basket .basket-item div.basket-item-qt p{
+}
+.basket .basket-item div.basket-item-qt div{
+    width: 10px;
+    position: relative;
+	top: -36px;
+	left: -35px;
 }
 .basket .basket-item div.basket-item-qt a{
-	clear: both;
 /*	background-color: #303030;
 	height: 12px;
 	width: 12px;
@@ -828,9 +836,9 @@ a.submit{
 	position: relative;*/
 }
 .basket .basket-item div.basket-item-qt div{
-	position: absolute;
+	/*position: relative;
 	top: -36px;
-	left: -30px;
+	left: -px;*/
 }
 .basket .basket-item div.basket-item-qt a i{
 	color: black;
@@ -977,6 +985,53 @@ a.submit{
 .payment-options .wrapper-small a{
     margin-bottom: 100px;
 }
+
+
+
+
+
+.checkout{
+    margin: 40px 0 100px 0;
+}
+.checkout .wrapper{
+
+}
+.checkout .wrapper a.btn-standard{
+    float: right;
+}
+
+
+.about-us{
+    margin-bottom: 80px;
+}
+.about-us .wrapper .title-subtitle{
+    margin-bottom: 80px;
+}
+.about-us .wrapper .about{
+    width: 49%;
+}
+.about-us .wrapper .about article img{
+    margin-bottom: 40px;
+    width: 100%;
+    height: 320px;
+}
+.about-us .wrapper .about article h1{
+	text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.about-us .wrapper .about article p{
+    width: 90%;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.about-us .wrapper .about{
+    float: left;
+}
+.about-us .wrapper .about:last-child{
+    float: right;
+}
+
+
 
 
 
