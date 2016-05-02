@@ -16,7 +16,7 @@ a{
 ul{
 	list-style: none;
 }
-input{
+input, textarea{
     outline: 0;
     padding-left: 15px;
 }
@@ -887,37 +887,38 @@ a.submit{
 .shipping-address .title-subtitle{
     margin: 60px 0;
 }
-.shipping-address input{
+.form-standard input{
     line-height: 45px;
 }
-.shipping-address form div label{
+.form-standard label{
     margin-bottom: 8px;
 }
-.shipping-address form div input{
+.form-standard input,
+.form-standard textarea{
     margin-left: 3px;
 }
-.shipping-address form div label,
-.shipping-address form div input{
+.form-standard div label,
+.form-standard div input,
+.form-standard div textarea{
     float: left;
     display: block;
     width: 99%;
 }
-.shipping-address form div{
+.form-standard div textarea{
+    border-color: #c2c2c2;
+    resize: none;
+    height: 200px;
+    padding-top: 15px;
+}
+.form-standard div{
     float: left;
     margin-bottom: 50px;
     width: 100%;
 }
-.shipping-address form div:nth-child(2),
-.shipping-address form div:nth-child(6),
-.shipping-address form div:nth-child(8){
+.form-standard div.half-size:nth-child(even){
     margin-right: 27px;
 }
-.shipping-address form div:nth-child(2),
-.shipping-address form div:nth-child(3),
-.shipping-address form div:nth-child(6),
-.shipping-address form div:nth-child(7),
-.shipping-address form div:nth-child(8),
-.shipping-address form div:nth-child(9){
+.form-standard div.half-size{
     width: 280px;
 }
 .shipping-address form div:last-of-type{
@@ -1001,6 +1002,10 @@ a.submit{
 }
 
 
+
+
+
+
 .about-us{
     margin-bottom: 80px;
 }
@@ -1030,6 +1035,21 @@ a.submit{
 .about-us .wrapper .about:last-child{
     float: right;
 }
+
+
+
+
+
+
+.contact .title-subtitle{
+    margin-bottom: 60px;
+}
+.contact{
+    margin-bottom: 140px;
+}
+
+
+
 
 
 
