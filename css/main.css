@@ -994,10 +994,7 @@ a.submit{
 .checkout{
     margin: 40px 0 100px 0;
 }
-.checkout .wrapper{
-
-}
-.checkout .wrapper a.btn-standard{
+.checkout a.btn-standard{
     float: right;
 }
 
@@ -1050,6 +1047,20 @@ a.submit{
 
 
 
+
+
+.no-products .wrapper div{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding: 90px 0;
+}
+.no-products .wrapper div a{
+    color: #f68236;
+}
+.no-products .wrapper div p:first-child{
+    margin-bottom: 20px;
+}
 
 
 
@@ -1272,7 +1283,10 @@ footer aside ul.social li a i{
     transform: translateX(-50%);
 }
 
-
+.italic{
+    font-style: italic;
+    font-weight: 300;
+}
 
 
 
