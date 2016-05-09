@@ -57,6 +57,9 @@ header.menu{
 .menu.pos-relative .wrapper aside .search a.submit i{
 	color: #3c3c3c;
 }
+.menu.pos-relative input{
+	color: blue;
+}
 header.menu .wrapper *{
 	color: #eee;
 	font-size: 16px;
@@ -154,15 +157,21 @@ header.menu .wrapper aside .search input {
 	background: none;
 	color: white;
 }
-header.menu .wrapper aside .search input:focus {
-	/*width: 260px;*/
-
-}
 header.menu .wrapper aside .search input::-webkit-input-placeholder,
 header.menu .wrapper aside .search input{
 	font-size: 14px;
 	font-weight: 300;
 	color: white;
+}
+header.pos-relative .wrapper aside .search input::-webkit-input-placeholder,
+header.pos-relative .wrapper aside .search input{
+    font-size: 14px;
+	font-weight: 300;
+	color: #3c3c3c;
+}
+header.menu .wrapper aside .search input:focus,
+header.pos-relative .wrapper aside .search input:focus{
+    width: 260px;
 }
 
 /* ************************ */
@@ -923,29 +932,29 @@ a.submit{
     margin-bottom: 50px;
     width: 100%;
 }
-.form-standard div.half-size:nth-child(even){
+.form-standard div.half-size div{
+    width: 280px;
+    margin-bottom: 0;
+}
+.form-standard div.half-size div:nth-child(odd){
     margin-right: 27px;
 }
-.form-standard div.half-size{
-    width: 280px;
-}
-.shipping-address form div:last-of-type{
+.form-standard div.form-checkbox{
     width: 220px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
-.shipping-address form div:last-of-type label{
+.form-standard div.form-checkbox label{
     width: 190px;
     text-align: center;
 }
-.shipping-address form div:last-of-type input{
+.form-standard div.form-checkbox input{
     width: 20px;
     position: relative;
     top: 4px;
     height: 20px;
 }
-
 
 
 
@@ -1201,12 +1210,8 @@ a.submit{
 .basket-item p{
 	text-transform: uppercase;
 }
+.order-history .basket-item div.product,
 .order-history .basket-item div.all-products{
-	margin: 0;
-	display: block;
-	float: left;
-}
-.order-history .basket-item div.product{
 	margin: 0;
 	display: block;
 	float: left;
@@ -1218,6 +1223,20 @@ a.submit{
 .order-history .all-products .product:last-child{
 	padding-bottom: 0;
 }
+
+
+
+
+.customer-data{
+    padding-bottom: 100px;
+}
+.customer-data .form-standard .half-size:nth-child(2) div:nth-child(1){
+    width: 390px;
+}
+.customer-data .form-standard .half-size:nth-child(2) div:nth-child(2){
+    width: 170px;
+}
+
 
 
 
