@@ -171,7 +171,7 @@ header.pos-relative .wrapper aside .search input{
 }
 header.menu .wrapper aside .search input:focus,
 header.pos-relative .wrapper aside .search input:focus{
-    width: 260px;
+    color: blue;
 }
 
 /* ************************ */
