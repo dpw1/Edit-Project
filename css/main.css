@@ -904,11 +904,23 @@ a.submit{
 .form-standard{
     overflow: auto;
 }
+.form-standard label,
+.form-standard input,
+.form-standard textarea{
+	font-size: 12px;
+	font-family: "Lato";
+	color: #606060;
+}
 .form-standard input{
     line-height: 45px;
+    font-size: 14px;
+}
+.form-standard textarea{
+    font-size: 14px;
 }
 .form-standard label{
     margin-bottom: 8px;
+    text-transform: uppercase;
 }
 .form-standard input,
 .form-standard textarea{
@@ -944,10 +956,12 @@ a.submit{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+
 }
 .form-standard div.form-checkbox label{
     width: 190px;
     text-align: center;
+	margin-top: 5px;
 }
 .form-standard div.form-checkbox input{
     width: 20px;
@@ -974,6 +988,10 @@ a.submit{
     display: block;
     width: 150px;
     margin: 0 auto;
+    font-size: 18px;
+    font-family: "Georgia";
+    color: #606060;
+
 }
 .payment-options .wrapper-small ul li{
     text-align: right;
@@ -983,9 +1001,10 @@ a.submit{
     display: block;
     float: right;
     width:50%;
+    font-style: italic;
 }
 .payment-options .wrapper-small ul li:last-child{
-    color: blue;
+    color: #f68236;
 }
 .payment-options .wrapper-small div p,
 .payment-options .wrapper-small div select{
@@ -999,6 +1018,7 @@ a.submit{
     background-color: white;
     margin-left: 3px;
     margin-bottom: 35px;
+    padding-left: 10px;
 }
 .payment-options .wrapper-small a{
     margin-bottom: 100px;
@@ -1013,6 +1033,12 @@ a.submit{
 }
 .checkout a.btn-standard{
     float: right;
+}
+.checkout a:not(.btn-standard){
+	font-size: 16px;
+	font-family: "Lato";
+	color: #303030;
+	text-decoration: underline;
 }
 
 
@@ -1035,13 +1061,20 @@ a.submit{
     height: 320px;
 }
 .about-us .wrapper .about article h1{
-	text-transform: uppercase;
     margin-bottom: 20px;
+    font-size: 24px;
+    font-family: "Lato";
+    color: #303030;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .about-us .wrapper .about article p{
     width: 90%;
     margin-bottom: 20px;
     line-height: 25px;
+    font-family: "Lato";
+    color: #606060;
+    text-align: justify;
 }
 .about-us .wrapper .about{
     float: left;
@@ -1070,7 +1103,11 @@ a.submit{
     margin: 0 auto;
     width: 50%;
     text-align: center;
-    padding: 90px 0;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    font-size: 16px;
+    font-family: "Lato";
+    color: #606060;
 }
 .no-products .wrapper div a{
     color: #f68236;
