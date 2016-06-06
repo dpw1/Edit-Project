@@ -127,7 +127,7 @@ header.menu .wrapper nav ul li a {
 }
 
 header.menu nav ul li a:hover {
-    border-bottom: 5px solid #2828c4;
+    /*    border-bottom: 5px solid #2828c4;*/
     transition: all .12s ease-in;
 }
 
