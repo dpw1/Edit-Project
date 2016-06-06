@@ -121,6 +121,14 @@ header.menu .wrapper nav ul li {
 
 header.menu .wrapper nav ul li a {
     text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    transition: all .2s ease-in;
+}
+
+header.menu nav ul li a:hover {
+    border-bottom: 5px solid #2828c4;
+    transition: all .12s ease-in;
 }
 
 header.menu .wrapper aside {
@@ -217,6 +225,8 @@ header.pos-relative .wrapper aside .search input:focus {
 header.menu .wrapper aside .search input:focus {
     color: white;
 }
+
+.menu-active {}
 
 
 /* ************************ */
